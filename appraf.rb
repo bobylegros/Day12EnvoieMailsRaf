@@ -5,7 +5,8 @@ def get_rows_from_items(items) # boîboîte (fonction) "utilitaire" (reçoit un 
   items.map { |item| [item[0]] + item[1].values } # je transforme un tableau contenant un hash en un "simple" tableau = plus de clés (juste les valeurs = les colonnes) => 1 ligne d'infos (1 colonne = 1 info, ex.: nom de la ville, email, etc.) = 1 ville ... n lignes = n villes ... c'est une TABLE (= le MÊME nombre de colonnes à CHAQUE ligne) !!!
 end
 
-destinataires = ['rafcapdeville@gmail.com', 'sebdoe75@gmail.com', 'jean25pierre2@gmail.com', 'whois.marvin.42@protonmail.com']
+#rajoute ton mail dans la ligne qui suit pour faire un teste
+destinataires = ['rafcapdeville@gmail.com', 'sebdoe75@gmail.com', 'jean25pierre2@gmail.com']
 # send_mails(destinataires)
 
 $base_url = "http://annuaire-des-mairies.com/"
@@ -18,3 +19,10 @@ p que_les_emails
 
 destinataires = que_les_emails
 # send_mails(destinataires)
+
+
+# ma ligne 8-9 envoie des mails à des gens que je connais
+# 11-17 je recupère les données du scrapper pour n'avoir qu'un tableau d'emails en ligne 17
+# ligne 20 on envoie à toutes les mairies mais on le fait pas parce qu'on est gentil
+#
+# il te faut un dossier get_credential.rb avec tes identifiants et clées clée
