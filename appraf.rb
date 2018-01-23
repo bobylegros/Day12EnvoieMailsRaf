@@ -9,13 +9,12 @@ destinataires = ['rafcapdeville@gmail.com', 'sebdoe75@gmail.com', 'jean25pierre2
 
 
 $base_url = "http://annuaire-des-mairies.com/"
-villes_et_mairies = get_emails_from_all_towns_in_dpt("val-d-oise.html")
-p villes_et_mairies
+villes_et_emails = get_emails_from_all_towns_in_dpt("val-d-oise.html")
+p villes_et_emails
 villes_destinataires = get_rows_from_items(villes_et_emails)
 p villes_destinataires
-
-
-
+que_les_emails = villes_destinataires.map { |ville_destinataire| ville_destinataire[1] }
+p que_les_emails
 
 
 
