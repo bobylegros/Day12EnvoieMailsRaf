@@ -1,5 +1,5 @@
 require 'gmail'
-puts "hello"
+
 #J'inclue le contenu de mon fichier 'get_credential' dans lequel il y mon identifiant et mon code
 require_relative 'get_credential'
 
