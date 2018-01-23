@@ -15,10 +15,10 @@ def send_mail(destinataire)
     #destinataire du mail
     to "#{destinataire}"     #on pourrait écrire directement un email ici mais pour envoyer à plein de monde on va boucler sur le paramètre (destinataire)
     #objet du mail
-    subject "Having fun in Puerto Rico! 13:00"
+    subject "Codeur depuis 2 semaines !"
     #message dans le mail
     text_part do
-      body "Text of plaintext message."
+      body "Salut c'est Raf, je suis élève à THP. Venez c'est top!"
     end
   end
 end
