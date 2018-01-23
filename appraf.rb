@@ -17,3 +17,4 @@ que_les_emails = villes_destinataires.map { |ville_destinataire| ville_destinata
 p que_les_emails
 
 destinataires = que_les_emails
+# send_mails(destinataires)
