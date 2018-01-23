@@ -6,7 +6,7 @@ def get_rows_from_items(items) # boîboîte (fonction) "utilitaire" (reçoit un 
 end
 
 destinataires = ['rafcapdeville@gmail.com', 'sebdoe75@gmail.com', 'jean25pierre2@gmail.com', 'whois.marvin.42@protonmail.com']
-
+# send_mails(destinataires)
 
 $base_url = "http://annuaire-des-mairies.com/"
 villes_et_emails = get_emails_from_all_towns_in_dpt("val-d-oise.html")
@@ -16,10 +16,4 @@ p villes_destinataires
 que_les_emails = villes_destinataires.map { |ville_destinataire| ville_destinataire[1] }
 p que_les_emails
 
-
-
-
-
-
-
-# send_mails(destinataires)
+destinataires = que_les_emails
